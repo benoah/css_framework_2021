@@ -1,5 +1,5 @@
 // Make a call to the base URL,
-const baseUrl = "https://rickandmortyapi.com/api/character/1";
+const baseUrl = "https://rickandmortyapi.com/api/character/2";
 
 // const newBaseUrl = "https://cors-anywhere.herokuapp.com/" + baseUrl;
 // making a fetch
@@ -18,9 +18,8 @@ fetch(baseUrl)
   });
 
 function cardHolderOne(json) {
-  const cardPlacerOne = document.querySelector(".characterOne");
-  // console.log(json);
-
+  const cardPlacerTwo = document.querySelector(".characterTWO");
+ 
   let type = "Secrete";
 
   if (json.type != "" && json.type != undefined) {
@@ -48,5 +47,5 @@ function cardHolderOne(json) {
   </div>
 `;
 
-  cardPlacerOne.innerHTML = html;
+  cardPlacerTwo.innerHTML = html;
 }

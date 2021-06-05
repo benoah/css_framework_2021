@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,29 +8,30 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;500&display=swap"
     rel="stylesheet">
-    <link rel="icon" href="data:;base64,=" />
+  <link rel="icon" href="data:;base64,=" />
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top  bg-light">
-    <a class="navbar navbar-brand " href="#">Rick and Morty</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="characters.html">Characters</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="favourites.html">Favourites</a>
-        </li>
-      </ul>
+    <div class="container">
+      <a class="navbar navbar-brand " href="#">Rick and Morty</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="characters.html">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favourites.html">Favourites</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
@@ -78,40 +78,25 @@
   </div>
   <div class="container">
     <nav>
-      <div class="nav  nav-tabs" id="nav-tab" role="tablist">
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-          aria-controls="nav-home" aria-selected="true">First</a>
+          aria-controls="nav-home" aria-selected="true">Rick </a>
         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-          aria-controls="nav-profile" aria-selected="false">Second</a>
+          aria-controls="nav-profile" aria-selected="false">Morty</a>
       </div>
     </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="characterOne"></div>
+      </div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
         <div class="card mb-3">
-          <div class="row no-gutters characternavsecond">
-            <div class="col-md-4">
-              <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" class="card-img " alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body ">
-                <h3 class=""> Morty Smith </h3>
-                <p class="">Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo
-                  laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus.
-                  Sed condimentum mattis rhoncus. </p>
-                <p class="">
-                  <a class="" href="#" title=""><img src="./images/SHARE.png" class="img-responsive"></a>
-                  <a class="ml-2" href="#" title=""><img src="./images/facebook-f.png" class="img-responsive"></a>
-                  <a class="ml-2" href="#" title=""><img src="./images/twitter.png" class="img-responsive"></a>
-                </p>
-              </div>
-
-
-            </div>
-          </div>
+          <div class="characterTWO">sss</div>
         </div>
-
       </div>
-
     </div>
+  </div>
+  </div>
   </div>
   </div>
   <div class="link"></div>
@@ -129,7 +114,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <script src="js/script.js"  type="module"></script>
+  <script src="js/script.js" type="module"></script>
+  <script src="js/test.js" type="module"></script>
 </body>
 
 </html>

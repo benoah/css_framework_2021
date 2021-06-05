@@ -15,13 +15,13 @@ const charaUrl = `${baseUrl}character/`;
 const detailsUrl = `${charaUrl}${id}`;
 
 fetch(detailsUrl)
-  .then(function(response) {
+  .then(function (response) {
     return response.json();
   })
-  .then(function(json) {
+  .then(function (json) {
     createDetails(json);
   })
-  .catch(function() {
+  .catch(function () {
     document.location.href = "error.html";
   });
 
@@ -56,4 +56,3 @@ function createDetails(details) {
   const newTitel = `${details.name}`;
   document.title = newTitel;
 }
-

@@ -1,13 +1,7 @@
-import {getExistingFavs} from "./utils/FavFunction.js";
-// Make a call to the base URL,
+import { getExistingFavs } from "./utils/FavFunction.js";
 const baseUrl = "https://rickandmortyapi.com/api/character/";
-
-// const newBaseUrl = "https://cors-anywhere.herokuapp.com/" + baseUrl;
-// making a fetch
 const cardPlacer = document.querySelector(".results");
-
 const favourites = getExistingFavs();
-
 
 let allCharacters;
 
@@ -16,16 +10,15 @@ async function getProducts() {
     const response = await fetch(baseUrl);
     const json = await response.json();
     const results = json.results;
+
     allCharacters = results;
     cardHolder(results);
-    //   console.log(results);
-
-    //  searchProducts(products)
   } catch (error) {
     console.log(error);
-    //displayMessage("error", error, ".product-container");
+    displayMessage("error", error, ".product-container");
   }
 }
+
 getProducts();
 
 function cardHolder(results) {
@@ -34,22 +27,21 @@ function cardHolder(results) {
   results.forEach((result) => {
     let cssClass = "far";
 
-   // check through favs array
+    // check through favs array
     // does the product id exist in the favs array
     const doesObjectExist = favourites.find(function (fav) {
-        console.log(fav);
+      console.log(fav);
 
-        return parseInt(fav.id) === result.id;
+      return parseInt(fav.id) === result.id;
     });
 
     console.log(doesObjectExist);
 
     // if is in the array, change the style of the i element
     if (doesObjectExist) {
-        cssClass = "fa";
+      cssClass = "fa";
     }
 
-    
     let type = "unknown";
 
     if (result.type != "" && result.type != undefined) {
@@ -62,10 +54,11 @@ function cardHolder(results) {
           <div class="card-img-top embed-responsive embed-responsive-4by3" style="background-image: url(${result.image});"></div>
           <div class="card-body">
           <div class="row"> 
-          <div class="col-10"> <h5 class="card-title">${result.name}</h5></div>
-          <div class="col"> 
-          <i class="${cssClass} fa-heart" data-id="${result.id}" data-name="${result.name}"> </i></div>
-          </div>
+          <div class="col"><h5 class="card-title">${result.name}</h5></div>
+         
+        
+          <i class="${cssClass} fa-heart" data-image="${result.image}"  data-id="${result.id}" data-name="${result.name}"> </i></div>
+
               <p class="card-text">${type}</p>
               <p>Episode count ${result.episode.length} </p> 
                                        
@@ -77,40 +70,34 @@ function cardHolder(results) {
   const favButtons = document.querySelectorAll(".card i");
   favButtons.forEach((button) => {
     button.addEventListener("click", handleClick);
-});
-
+  });
 }
 function handleClick() {
-    this.classList.toggle("fa");
-    this.classList.toggle("far");
-    const id = this.dataset.id;
-    const name = this.dataset.name;
-    const currentFavs = getExistingFavs();
+  this.classList.toggle("fa");
+  this.classList.toggle("far");
+  const id = this.dataset.id;
+  const name = this.dataset.name;
+  const image = this.dataset.image;
 
-    const resultsExists = currentFavs.find(function (fav) {
-        return fav.id === id;
-    });
+  const currentFavs = getExistingFavs();
 
-    if (resultsExists === undefined) {
-        const results = { id: id, name: name };
-        currentFavs.push(results);
-        saveFavs(currentFavs)
-    } else {
-        const newFavs = currentFavs.filter((fav) => fav.id !== id);
-        saveFavs(newFavs);
-    }
+  const resultsExists = currentFavs.find(function (fav) {
+    return fav.id === id;
+  });
+
+  if (resultsExists === undefined) {
+    const results = { id: id, name: name, image: image };
+    currentFavs.push(results);
+    saveFavs(currentFavs);
+  } else {
+    const newFavs = currentFavs.filter((fav) => fav.id !== id);
+    saveFavs(newFavs);
+  }
 }
-
-
-
-
-
 
 function saveFavs(favs) {
-    localStorage.setItem("favourites", JSON.stringify(favs));
+  localStorage.setItem("favourites", JSON.stringify(favs));
 }
-
-
 
 const search = document.querySelector(".search");
 

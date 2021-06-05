@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Favourites</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
-        <link href="css/style.css" rel="stylesheet" />
-        <link rel="icon" href="data:;base64,=" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="menu"><a href="index.html">Home</a> | <a href="favourites.html" class="active">Favourites</a></div>
-            <h1>Favourites</h1>
-            <div class="product-container"></div>
-        </div>
-        <script src="js/favourites.js" type="module"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FRAMEWORKS CA</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:;base64,=" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+      <a class="navbar-brand" href="#">Rick and Morty</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="characters.html">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favourites.html">Favourites</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container pt-5">
+      <h1>Favourites</h1>
+      <div class="fav-container"></div>
+    </div>
+    <script src="js/favourites.js" type="module"></script>
+  </body>
 </html>
