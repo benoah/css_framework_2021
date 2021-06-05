@@ -1,0 +1,46 @@
+.navbar-brand{
+    font-family: 'Playfair Display', serif; 
+    font-style:  italic;
+    font-size: 20px;
+    color: $primary !important;
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+    .navbar {
+        background-color: #EFEFEF !important;
+    }
+
+       
+    .navbar-light .navbar-nav .nav-link {
+        color: #0A0A0A;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+    
+    }
+    
+    .navbar-light .navbar-nav .active > .nav-link {
+        background-color: #FFFFFF;
+    }
+    
+    
+    .input-group-text{
+        color: white;
+        background-color: #E92569;
+    }
+    
+     
+    .navbar-collapse {
+        z-index: 1;
+    }
+    
+    
+    
+  
+    
+  
+ 
+    
+    
+    
+   

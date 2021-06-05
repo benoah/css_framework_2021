@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+h1 {
+    font-size: 34px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color:$primary;
+    font-family: 'Playfair Display', serif;
+}
+
+
+p{
+    font-family: 'Lato', sans-serif;
+    color: #767676;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.small, small {
+    font-size: 100%;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color:#0A0A0A;
+    line-height: 2;
+}
+

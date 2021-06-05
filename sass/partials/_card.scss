@@ -1,0 +1,48 @@
+.news-block .card-img-top {
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+    .card-img{
+   
+        padding: 16px;
+    }
+    
+    .news-block {
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 16px;
+        border-radius: 15px;
+        margin-bottom: 2em;
+    }
+    .news-block p {
+        font-size: 0.9rem;
+        flex: 1;
+    }
+    
+    .news-block .btn {
+        font-size: 0.8rem;
+        background: $primary;
+        border: none;
+        text-transform: uppercase;
+        position: relative;
+        width: 100%;
+    }
+    .news-block .btn::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 32px;
+        height: 100%;
+        background:#767676;
+    }
+     
+
+
+
+

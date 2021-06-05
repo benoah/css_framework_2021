@@ -1,0 +1,27 @@
+html,
+body {
+    height: 100%;
+}
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-image: radial-gradient(circle at center,getColour(mixone), getColour( mixtwo));
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background: #ffffff;
+    font-size: 1em;
+    margin-top: 48px;
+}
+
+.containerDetail{
+    margin-top: 32px !important;
+}

@@ -1,0 +1,14 @@
+$primary: #E92569 ;
+$light: #EFEFEF;
+$navbar-light-color:#0A0A0A;
+
+
+$BodyColours:(
+    mixone:#FFFFFF,
+    mixtwo:#E5E5E5,
+);
+
+@function getColour($colour) {
+    @return map-get($BodyColours, $colour);
+}
+

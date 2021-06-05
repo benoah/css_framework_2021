@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS FRAMEWORKS CA</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;500&display=swap"
+    rel="stylesheet">
+    <link rel="icon" href="data:;base64,=" />
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top  bg-light">
+    <a class="navbar navbar-brand " href="#">Rick and Morty</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="characters.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="favourites.html">Favourites</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner embed-responsive embed-responsive-21by9">
+      <div class="carousel-item active embed-responsive-item "
+        style="background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.vg247.com%2Fcurrent%2F2015%2F08%2Frick_and-_morty_1.jpg&f=1&nofb=1);">
+      </div>
+      <div class="carousel-item  embed-responsive-item "
+        style="background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.breathecast.com%2Fdata%2Fimages%2Ffull%2F33863%2Fmaster-rick-and-morty.jpg&f=1&nofb=1);">
+      </div>
+      <div class="carousel-item  embed-responsive-item "
+        style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.theedge.co.nz%2Fhome%2Fscandal%2F2019%2F11%2Frick-and-morty-season-4-release-date-has-been-revealed%2F_jcr_content%2Fimage.dynimg.1280.q75.jpg%2Fv1%2FRICK-MORTY-S4-071119.jpg&f=1&nofb=1);">
+      </div>
+    </div>
+  </div>
+  <div class="container makesometextchange">
+    <h1>Rick and Morty</h1>
+    <blockquote>
+      <p>
+        Rick and Morty is an American adult animated science fiction sitcom created by
+        Justin Roiland and Dan Harmon for Cartoon Network's
+        late-night programming block Adult Swim.
+        The series follows the misadventures of cynical mad scientist Rick Sanchez and
+        his good-hearted but fretful grandson Morty Smith, who split their time between domestic
+        life and interdimensional adventures.
+      </p>
+
+      <p>
+        Roiland voices the eponymous characters, with Chris Parnell,
+        Spencer Grammer and Sarah Chalke voicing the rest of the family.
+        The series originated from an animated short parody film of Back to the Future,
+        created by Roiland for Channel 101, a short film festival co-founded by Harmon.
+        The series has been acclaimed by critics for its originality, creativity and humor.
+      </p>
+      <p>
+        <cite><a href="https://en.wikipedia.org/wiki/Rick_and_Morty" target="_blank">Wikipedia</a></cite>
+  </div>
+  </blockquote>
+  </div>
+  <div class="container">
+    <nav>
+      <div class="nav  nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">First</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Second</a>
+      </div>
+    </nav>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="card mb-3">
+          <div class="row no-gutters characternavsecond">
+            <div class="col-md-4">
+              <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" class="card-img " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ">
+                <h3 class=""> Morty Smith </h3>
+                <p class="">Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo
+                  laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus.
+                  Sed condimentum mattis rhoncus. </p>
+                <p class="">
+                  <a class="" href="#" title=""><img src="./images/SHARE.png" class="img-responsive"></a>
+                  <a class="ml-2" href="#" title=""><img src="./images/facebook-f.png" class="img-responsive"></a>
+                  <a class="ml-2" href="#" title=""><img src="./images/twitter.png" class="img-responsive"></a>
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <div class="link"></div>
+  <footer>
+    <div><i class="fa fa-twitter"></i> <i class="fa fa-vimeo"></i></div>
+    <div>Copyright 2020</div>
+    <div><a href="terms.html"></a><a href="policy.html">ben</a></div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"  type="module"></script>
+</body>
+
+</html>

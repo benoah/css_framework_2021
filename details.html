@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS FRAMEWORKS CA</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;500&display=swap"
+          rel="stylesheet">
+          <link rel="icon" href="data:;base64,=" />
+        <link rel="stylesheet" href="./css/style.min.css">
+      </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar navbar-brand " href="#">Rick and Morty</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="characters.html">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="favourites.html">Favourites</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 col-xs-3" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-text" id="btnGroupAddon">Go</div>
+              </form>
+            </div>
+          </nav>            
+          <br><br>
+          <main class="container content containerDetail">
+            <div class="loader"></div> 
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="breadcrumb-nav"><a href="/">Back to characters</a></div>
+                    <img class="details-image" src="https://via.placeholder.com/250" alt="Character Name" />
+                    </div>
+                    <div class="col-md-12 ">
+                    <div class="card-body ">
+                        <h1>Character Name</h1>
+                        <div class="detail-details">
+                            <p>Status: <span class="value" id="status">Status goes here</span></p>
+                            <p>Species: <span class="value" id="species">Species goes here</span></p>
+                            <p>Origin: <span class="value" id="origin">Origin name goes here</span></p>
+                            <p>Location: <span class="value" id="location">Location name goes here</span></p>                   
+                        </div>
+                    </div>
+            </div>
+    
+          
+        </main>
+        <div class="link"></div>
+        <footer>
+          <div><i class="fa fa-twitter"></i> <i class="fa fa-vimeo"></i></div>
+          <div>Copyright 2020</div>
+          <div><a href="terms.html"></a><a href="policy.html">ben</a></div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+          crossorigin="anonymous"></script>
+        <script src="js/details.js"  type="module"></script>
+      </body>
+      
+      </html>
